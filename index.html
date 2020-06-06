@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!--Desenvolvido por: Venâncio Machaiela
+        Siga-me para mais templates gratuitos: linktr.ee/VenancioMachaiela-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo.css">
+        <title>Font-end na Prática - HTML, CSS e Javascript</title>
+    </head>
+    <body onload="document.body.className += 'loaded';" class="fadein">
+        <header></header>
+        <main class="container">
+            <div class="img-container">
+                <img src="img/welcome - 002.png" alt="">
+            </div>
+            <div class="welcome-container">
+                <div class="welcome-content">
+                    <div class="slide">
+                        <img src="img/welcome - 001.png" class="img" alt="">
+                        <h1>Front-end na Prática!</h1>
+                        <h3>HTML, CSS e Javascript</h3>
+                        <hr>
+                        <p>Para Desenvolvedores Junior.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="img/welcome - 003.png" class="img" alt="">
+                        <h1>Front-end na Prática!</h1>
+                        <h3>Torne-se um Bom Desenvolvedor.</h3>
+                        <hr>
+                        <p>Do Zero ao Profissional</p>
+                    </div>
+                    <div class="slide">
+                        <img src="img/welcome - 004.png" class="img" alt="">
+                        <h1>Front-end na Prática!</h1>
+                        <h3>Participe na nossa comunidade</h3>
+                        <hr>
+                        <p>Compartilhe sua evolução connosco</p>
+                    </div>
+                    <button class="btn">Comece agora!</button>
+                    <nav class="controlers">
+                        <button class="controle controlActive" onclick="currentDiv(1)"></button>
+                        <button class="controle controlInactive" onclick="currentDiv(2)"></button>
+                        <button class="controle controlInactive" onclick="currentDiv(3)"></button>
+                    </nav>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>

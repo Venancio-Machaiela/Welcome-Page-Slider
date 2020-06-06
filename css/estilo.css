@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+    width: 78vw;
+    margin-top: 20px;
+    height: 94vh;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 1px 1px 50px 1px #acacac;
+}
+.img-container{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #6c64fd;
+    border-radius: 20px 0 0 20px;
+}
+.welcome-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.controlers{
+    margin-top: 20px;
+}
+.img-container img{
+    width: 35vw;
+}
+.welcome-container img{
+    width: 70%;
+}
+.btn{
+    padding: 10px 35px 10px 35px;
+    border: none;
+    margin-top: 25px;
+    border-radius: 10px;
+    background-color: #6c64fd;
+    font-size: 1.2em;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.btn:hover{
+    background-color: #564dfc;
+}
+.welcome-content hr{
+    border: none;
+    background-color: #6c64fd;
+    width: 30%;
+    height: 4px;
+    margin: 10px;
+    margin-left: 35%;
+}
+.welcome-content h3{
+    color: #424141;
+}
+p{
+    font-size: 1.2em;
+    color: #575757;
+}
+.controlActive{
+    border: none;
+    padding: 7px;
+    background-color: #564dfc;
+    border-radius: 20px;
+    margin: 10px;
+    outline: none;
+}
+.controlInactive{
+    border: none;
+    padding: 7px;
+    background-color: #a5a0ff;
+    border-radius: 20px;
+    margin: 10px;
+    outline: none;
+}
+
+@media screen and (max-width: 900px){
+    h1{
+        font-size: 1.8em;
+    }
+    h2, h3, h4, h5{
+        font-size: 1.1em;
+    }
+    p{
+        font-size: 1em;
+    }
+    .img-container{
+        display: none;
+    }
+    .container{
+        width: 95vw;
+        background: none;
+        justify-content: center;
+    }
+    .welcome-container{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .welcome-container img{
+        width: 70vw;
+    }
+}
+@media screen and (max-width: 600px){
+    .container{
+        border-radius: none;
+        box-shadow: none;
+    }
+    .welcome-container img{
+        width: 85vw;
+    }
+}
+.fadein{
+    opacity: 0;
+    transition: opacity 1.5s;
+    -webkit-transition: opacity 1.5s;
+}
+body.loaded .fadein{
+    opacity: 1;
+}
